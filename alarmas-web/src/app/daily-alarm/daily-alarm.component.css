@@ -1,0 +1,76 @@
+.title{
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+.label{
+    margin-left: 7.5cm;
+    padding: 5px;
+}
+.row{
+    display: flex;
+}
+.column {
+    flex: 50%
+}
+.form-control{
+    margin-left: 7.5cm;
+    width: 50%;
+    padding: 5px;
+    background-image: url(../../assets/Rectangle\ 34.svg);
+    color: white;
+}
+.form-select{
+    width: 50%;
+    margin-left: 7.5cm;
+    background-color:#171717 ;
+    color: white;
+}
+.row1{
+    margin-left: 8.5cm;
+}
+.containerIntervalo{
+    display: inline-block;
+    margin-left: 7.5cm;
+    background-image: url(../../assets/Rectangle\ 34.svg);
+    padding: 10px;
+    padding-left: 2cm;
+    padding-right: 2cm;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.containerLabel{
+    margin-left: 8cm;
+}
+
+.containerIntervalo1{
+    display: inline-block;
+    background-image: url(../../assets/Rectangle\ 34.svg);
+    padding: 10px;
+    padding-left: 2cm;
+    padding-right: 2cm;
+    border-radius: 10px;
+}
+.containerIntervalo2{
+    
+    display: inline-block;
+    background-image: url(../../assets/Rectangle\ 34.svg);
+    border-radius: 10px;
+    padding-right: 2cm;
+    margin-left: 2cm;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.crateAlarm{
+    background-image: url(../../assets/background.jpg);
+    color:white
+}
+.button{
+    margin-left: 7.5cm;
+    width: 2.5cm;
+}
+.button1{
+    margin-left: 4.3cm;
+    width: 2.5cm;
+}

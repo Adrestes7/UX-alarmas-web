@@ -1,0 +1,38 @@
+<div class="home">
+    <h1 class="title">Tus Alarmas</h1>
+    <p class="title">lun, 4 mar, 4:50am</p>
+    <div class="container">
+        <div>
+            <div *ngFor="let alarm of alarms">
+                <div class="alarmContainer">
+                    <div class="row">
+                        <div class="column">
+                            <p>
+                                {{alarm.date}}
+                            </p>
+                        </div>
+                        <div class="column">
+                            <p>
+                                {{alarm.name}}
+                            </p>
+                        </div>
+                        <div class="column">
+                            <p>
+                                {{alarm.time}}
+                            </p>
+                        </div>
+                        <div class="column">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button1">
+            <button type="button" class="btn btn-primary" routerLink="/alarm">Crear Alarma</button>
+        </div>
+    </div>
+</div>
