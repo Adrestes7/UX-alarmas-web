@@ -1,0 +1,30 @@
+<div class="create-account-container">
+  <h1>Crear nueva cuenta</h1>
+  <form #registrationForm="ngForm" (ngSubmit)="onRegister(registrationForm)">
+    <div class="form-field" [class.has-error]="nombre.errors && nombre.errors['required'] && nombre.touched">
+      <input type="text" id="nombre" name="nombre" ngModel required #nombre="ngModel" placeholder="Nombre">
+      <div *ngIf="nombre.errors && nombre.errors['required'] && nombre.touched" class="error-message">
+        El nombre es obligatorio.
+      </div>
+    </div>
+    <div class="form-field" [class.has-error]="correo.errors && correo.errors['required'] && correo.touched">
+      <input type="email" id="correo" name="correo" ngModel required #correo="ngModel" placeholder="Correo">
+      <div *ngIf="correo.errors && correo.errors['required'] && correo.touched" class="error-message">
+        El correo es obligatorio.
+      </div>
+    </div>
+    <div class="form-field" [class.has-error]="contrasena.errors && contrasena.errors['required'] && contrasena.touched">
+      <input type="password" id="contrasena" name="contrasena" ngModel required #contrasena="ngModel" placeholder="Contraseña">
+      <div *ngIf="contrasena.errors && contrasena.errors['required'] && contrasena.touched" class="error-message">
+        La contraseña es obligatoria.
+      </div>
+    </div>
+    <div class="form-field birthdate">
+      <input type="text" id="fechaDia" placeholder="DD" maxlength="2" required>
+      <input type="text" id="fechaMes" placeholder="MM" maxlength="2" required>
+      <input type="text" id="fechaAno" placeholder="AAAA" maxlength="4" required>
+    </div>
+    <button type="button" class="register-button" (click)="onRegister(registrationForm)">Registrarse</button>
+    <button type="button" class="login-button">Iniciar sesión</button>
+  </form>
+</div>
